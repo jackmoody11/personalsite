@@ -5,7 +5,16 @@
         <link rel="stylesheet" href="{% static 'css/argon.css' %}">
     </head>
     <body>
-        {% block content %}
+        <main>
+            {% include 'blog/_navbar.html' %}
+            {% block nav %}
+            {% endblock %}
+
+            {% block content %}
+            {% endblock %}
+        </main>
+        {% include 'blog/_footer.html' %}
+        {% block footer %}
         {% endblock %}
     </body>
 

@@ -1,0 +1,29 @@
+{% block footer %}
+    <footer class="footer">
+    <div class="container">
+      <hr>
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; 2018 Jack Moody
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <a href="{% url 'post_list' %}" class="nav-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Core -->
+    {% load static %}
+  <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/headroom/headroom.min.js' %}"></script>
+  <!-- Argon JS -->
+  <script src="{% static 'js/argon.js' %}"></script>
+{% endblock %}
