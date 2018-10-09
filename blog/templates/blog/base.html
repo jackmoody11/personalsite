@@ -3,16 +3,16 @@
     <head>
         <title>Jack Moody</title>
         <link rel="stylesheet" href="{% static 'css/argon.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <main>
-            {% include 'blog/_navbar.html' %}
-            {% block nav %}
-            {% endblock %}
+        {% include 'blog/_navbar.html' %}
+        {% block nav %}
+        {% endblock %}
 
-            {% block content %}
-            {% endblock %}
-        </main>
+        {% block content %}
+        {% endblock %}
+
         {% include 'blog/_footer.html' %}
         {% block footer %}
         {% endblock %}

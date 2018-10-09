@@ -38,10 +38,8 @@
     --info: #11cdef;
     --warning: #fb6340;
     --danger: #f5365c;
-    --light: #adb5bd;
     --dark: #212529;
     --default: #172b4d;
-    --white: #fff;
     --neutral: #fff;
     --darker: black;
     --breakpoint-xs: 0;
@@ -139,7 +137,6 @@ abbr[title],
 abbr[data-original-title]
 {
     cursor: help;
-            text-decoration: underline;
             text-decoration: underline dotted;
 
     border-bottom: 0;
