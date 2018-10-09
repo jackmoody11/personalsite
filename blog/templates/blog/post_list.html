@@ -1,12 +1,12 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
-        <div class="container">
-            <div class="row">
-                <div class="col-8 offset-2">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            {% for post in posts %}
+                <div class="col-6">
                     <div class="card">
-                        <img src="https://img.purch.com/w/640/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA3Ni83MjMvaTAyL2UwMTAyLmpwZz8xNTI3NzAzNDU1" class="rounded card-img-top">
+                        <img src="https://img.purch.com/w/640/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA3Ni83MjMvaTAyL2UwMTAyLmpwZz8xNTI3NzAzNDU1" class="rounded card-img-top img-fluid">
                         <div class="card-body">
                             <h1 class="card-title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                             <p class="card-text">{{ post.body }}</p>
@@ -16,8 +16,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            {% endfor %}
         </div>
-        <br>
-    {% endfor %}
+    </div>
+
 {% endblock %}
