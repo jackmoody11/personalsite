@@ -1,5 +1,147 @@
 {% extends 'blog/base.html' %}
-
+{% load static %}
 {% block content %}
-    <h1>About</h1>
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'img/profile-picture.jpg' %}" class="img-fluid rounded shadow-lg">
+            </div>
+            <div class="col-8">
+                <h1 class="display-2">About</h1>
+                <br>
+                <h2 class="display-4">Education</h2>
+                <div class="row">
+                    <div class="col-9">
+                        <h6>University of North Carolina - Chapel Hill <small class="text-muted">B.S. Mathematics, Minor Business Administration</small></h6>
+                    </div>
+                    <div class="col-3 text-lg-right">
+                        <p>May 2020</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <h6>North Carolina Governor's School <small class="text-muted">Mathematics</small></h6>
+                    </div>
+                    <div class="col-3 text-lg-right">
+                        <p>July 2015</p>
+                    </div>
+                </div>
+                <hr>
+
+
+                <!--  Begin Experience  -->
+                <h1 class="display-4">Experience</h1>
+                <div class="row">
+                    <div class="col-8">
+                        <h6 class="mb-0">Ipreo <small class="text-muted">Raleigh, NC</small></h6>
+                        <small class="text-muted pt-0">Product Build Intern</small>
+                    </div>
+                    <div class="col-4 text-lg-right">
+                        <p>May - August 2018</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-11">
+                        <ul>
+                            <li><p class="mb-2">
+                                Created and interpreted graphical and statistical analyses created from 1300+
+                                support tickets to locate areas of improvement for Equity Support Team
+                            </p></li>
+                            <li><p class="mb-2">
+                                Programmed VBA macro to update data used in statistical analyses
+                            </p></li>
+                            <li><p class="mb-2">
+                                Developed product proposals received from Investment Banking clients
+                                in order to provide developers with business context of desired features
+                            </p></li>
+                            <li><p class="mb-2">
+                                Updated API documentation for Investment Banking clients to outline new
+                                features of the Equity Book Build product
+                            </p></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+
+                <!--  Portfolio Management Team  -->
+
+                <div class="row">
+                    <div class="col-8">
+                        <h6 class="mb-0">Portfolio Management Team <small class="text-muted">Chapel Hill, NC</small></h6>
+                        <small class="text-muted">Consumer Staples Sector Head</small>
+                    </div>
+                    <div class="col-4 text-lg-right">
+                        <p>September 2016 - Present</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-11">
+                        <ul>
+                            <li><p class="mb-2">
+                                Lead team of 4 in pitching top consumer staples stocks while using DCF
+                                models and Bloomberg terminal to guide decision-making for the fund
+                            </p></li>
+                            <li><p class="mb-2">
+                                Analyze equities quantitatively and qualitatively, accounting for macroeconomic
+                                trends and future outlook for various companies before pitching to $60,000 fund
+                            </p></li>
+                            <li><p class="mb-2">
+                                Outperform comparable sector ETFs by 8.1-11.3% while maintaining a comparable risk exposure
+                            </p></li>
+                            <li><p class="mb-2">
+                                Collaborate with team members to research trends within various sectors and present
+                                stock opportunities to the rest of the 40-member team
+                            </p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--  Balentine  -->
+                <div class="row">
+                    <div class="col-8">
+                        <h6 class="mb-0">Balentine LLC <small class="text-muted">Raleigh, NC</small></h6>
+                        <small class="text-muted">Investment Management Intern</small>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-lg-right">May - July 2017</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11">
+                        <ul>
+                            <li><p class="mb-2">
+                                Developed spreadsheets and spending plans used by Relationship
+                                Managers when discussing financial goals for domestic and international clients
+                            </p></li>
+                            <li><p class="mb-2">
+                                Researched technology specific fund while considering client’s risk tolerance
+                                and financial circumstance
+                            </p></li>
+                            <li><p class="mb-2">
+                                Explored and added to ROI list in order to create new business opportunities in
+                                the United Kingdom
+                            </p></li>
+                            <li><p class="mb-2">
+                                Mapped out a philanthropic vehicle for a charitably inclined client in light of
+                                complex taxation policies
+                            </p></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+
+
+                <!--  Skills & Interests  -->
+                <h1 class="display-4">Skills & Interests</h1>
+                <div class="row">
+                    <h6>Skills: <small class="text-muted">Python, MATLAB, Ruby (on Rails), VBA, Git</small></h6>
+                </div>
+                <div class="row">
+                    <h6>Interests: <small class="text-muted">Astronomy, Running, Banjo, Waterskiing</small></h6>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
