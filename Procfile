@@ -1,1 +1,1 @@
-web: gunicorn jackmoody.wsgi
+web: gunicorn personalsite.wsgi
